@@ -5,4 +5,4 @@
 
 // Render the HomeScene.
 //
-Combo.render(document.getElementById("root"), HomeScene.render());
+Combo.render(HomeScene);

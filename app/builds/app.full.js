@@ -29,7 +29,7 @@ var HomeScene = new (function (_Combo$Component) {
 	}]);
 
 	return _class;
-}(Combo.Component))();
+}(Combo.Component))("root");
 // ## app
 //
 // Define application-level variables and methods below.
@@ -37,4 +37,4 @@ var HomeScene = new (function (_Combo$Component) {
 
 // Render the HomeScene.
 //
-Combo.render(document.getElementById("root"), HomeScene.render());
+Combo.render(HomeScene);

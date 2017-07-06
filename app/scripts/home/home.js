@@ -8,4 +8,4 @@ var HomeScene = new class extends Combo.Component {
 			<h1>Home Page</h1>
 		`;
 	}
-}();
+}("root");
