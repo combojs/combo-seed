@@ -1,40 +1,55 @@
 "use strict";
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 // ## HomeScene
 //
-// Contains the markup and components for the Home page.
+// Represents the Home page.
 //
-var HomeScene = new (function (_Combo$Component) {
-	_inherits(_class, _Combo$Component);
-
-	function _class() {
-		_classCallCheck(this, _class);
-
-		return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+var HomeScene = Combo.Component.extend({
+	render: function render() {
+		return "\n\t\t\t<h1>Home Page</h1>\n\t\t";
 	}
+});
 
-	_createClass(_class, [{
-		key: "render",
-		value: function render() {
-			return "\n\t\t\t<h1>Home Page</h1>\n\t\t";
-		}
-	}]);
+// ## FooterComponent
+//
+// Represents the page footer.
+//
+var FooterComponent = Combo.Component.extend({
+	render: function render() {
+		return "\n\t\t\t<footer>\n\t\t\t\tFooter\n\t\t\t</footer>\n\t\t";
+	}
+});
 
-	return _class;
-}(Combo.Component))("root");
+// ## HeaderComponent
+//
+// Represents the page header.
+//
+var HeaderComponent = Combo.Component.extend({
+	render: function render() {
+		return "\n\t\t\t<header>\n\t\t\t\tHeader\n\t\t\t</header>\n\t\t";
+	}
+});
+
+// ## LayoutScene
+//
+// Represents the page template.
+//
+var LayoutScene = Combo.Component.extend({
+	created: function created() {
+		this.update({
+			scene: HomeScene
+		});
+	},
+	render: function render() {
+		return "\n\t\t\t<div id=\"header\">" + HeaderComponent.render() + "</div>\n\t\t\t<div id=\"content\">" + this.data.scene.render() + "</div>\n\t\t\t<div id=\"footer\">" + FooterComponent.render() + "</div>\n\t\t";
+	}
+});
+
 // ## app
 //
 // Define application-level variables and methods below.
 //
 
-// Render the HomeScene.
+// Render the LayoutScene.
 //
-Combo.render(HomeScene);
+Combo.mount("root", LayoutScene);

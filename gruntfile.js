@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 			js: {
 				src: [
 					"app/scripts/*/**/**.js",
-					"app/scripts/app.js"										
+					"app/scripts/app.js"
 				],
 				dest: "app/builds/app.full.js"
 			},
@@ -19,9 +19,9 @@ module.exports = function(grunt) {
 					"app/styles/app.css"
 				],
 				dest: "app/builds/app.full.css"
-			}			
+			}
 		},
-		
+
 		// jshint -------------------------------------------------------------
 
 		jshint: {
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 
 		// babel --------------------------------------------------------------
 
-		babel: {	
+		babel: {
 			dist: {
 				files: {
 					"app/builds/app.full.js": "app/builds/app.full.js"
@@ -63,22 +63,22 @@ module.exports = function(grunt) {
 				src: "app/builds/app.full.css",
 				dest: "app/builds/app.min.css"
 			}
-        }		
+        }
 	});
 
 	// load -------------------------------------------------------------------
 
 
 	grunt.loadNpmTasks("grunt-contrib-concat");
-	grunt.loadNpmTasks("grunt-contrib-jshint");	
-	grunt.loadNpmTasks("grunt-contrib-uglify");	
+	grunt.loadNpmTasks("grunt-contrib-jshint");
+	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
-	grunt.loadNpmTasks("grunt-babel");		
+	grunt.loadNpmTasks("grunt-babel");
 
 	// register ---------------------------------------------------------------
 
 	grunt.registerTask("default", [
-		"concat", 
+		"concat",
 		"jshint",
 		"babel",
 		"uglify",

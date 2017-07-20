@@ -1,8 +1,10 @@
+
+
 // ## app
 //
 // Define application-level variables and methods below.
 //
 
-// Render the HomeScene.
+// Render the LayoutScene.
 //
-Combo.render(HomeScene);
+Combo.mount("root", LayoutScene);
