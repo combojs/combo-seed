@@ -1,3 +1,3 @@
-# 1.0.0 (7/20/2017)
+# 1.0.0
 
 * Initial public release.
