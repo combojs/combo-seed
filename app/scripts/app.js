@@ -1,10 +1,9 @@
 
-
 // ## app
 //
 // Define application-level variables and methods below.
 //
 
-// Render the LayoutScene.
+// Render the LayoutPage.
 //
-Combo.mount("root", LayoutScene);
+LayoutPage.mount(document.getElementById("root"));
