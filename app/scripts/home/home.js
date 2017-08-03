@@ -2,7 +2,7 @@
 //
 // Represents the Home page.
 //
-var HomeScene = Combo.Component.extend({
+var HomePage = new Combo.Component({
 	render: function() {
 		return `
 			<h1>Home Page</h1>

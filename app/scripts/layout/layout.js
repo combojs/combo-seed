@@ -2,16 +2,16 @@
 //
 // Represents the page template.
 //
-var LayoutScene = Combo.Component.extend({
+var LayoutPage = new Combo.Component({
 	created: function() {
 		this.update({
-			scene: HomeScene
+			page: HomePage
 		});
 	},
 	render: function() {
 		return `
 			<div id="header">${HeaderComponent.render()}</div>
-			<div id="content">${this.data.scene.render()}</div>
+			<div id="content">${this.data.page.render()}</div>
 			<div id="footer">${FooterComponent.render()}</div>
 		`;
 	}

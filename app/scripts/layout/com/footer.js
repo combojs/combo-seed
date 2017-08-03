@@ -2,7 +2,7 @@
 //
 // Represents the page footer.
 //
-var FooterComponent = Combo.Component.extend({
+var FooterComponent = new Combo.Component({
 	render: function() {
 		return `
 			<footer>

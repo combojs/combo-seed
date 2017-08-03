@@ -2,7 +2,7 @@
 //
 // Represents the page header.
 //
-var HeaderComponent = Combo.Component.extend({
+var HeaderComponent = new Combo.Component({
 	render: function() {
 		return `
 			<header>
