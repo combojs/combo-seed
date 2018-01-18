@@ -1,5 +1,9 @@
 # Change Log
 
+## Unreleased changes
+
+* Updated the project to use Code Climate.
+
 ## 2.0.0 (2018-01-18)
 
 * Complete rewrite
