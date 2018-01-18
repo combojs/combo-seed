@@ -1,11 +1,9 @@
-// ## HomeScene
-//
-// Represents the Home page.
-//
-var HomePage = new Combo.Component({
-	render: function() {
+const Home = new class extends Combo.Component {
+	render() {
 		return `
-			<h1>Home Page</h1>
+			<h1>Home Page</h1>			
 		`;
 	}
-});
+}();
+
+export { Home };

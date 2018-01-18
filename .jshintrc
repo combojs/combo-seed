@@ -1,6 +1,0 @@
-{
-	"strict": false,
-	"globalstrict": false,
-	"esversion": 6,
- 	"globals": { "Combo": true }
-}

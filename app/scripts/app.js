@@ -1,9 +1,7 @@
+import {Layout} from "./layout/layout.js";
+import {Home} from "./home/home.js";
+	
+Layout.mount(document.getElementById("root"), {
+	page: Home
+});
 
-// ## app
-//
-// Define application-level variables and methods below.
-//
-
-// Render the LayoutPage.
-//
-LayoutPage.mount(document.getElementById("root"));

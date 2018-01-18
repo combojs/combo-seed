@@ -1,0 +1,17 @@
+{
+	"extends": "eslint:recommended",
+	"rules": {
+		"quotes": [2, "double", {avoidEscape: true, allowTemplateLiterals: true}]
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"globals": {
+		"Combo": true
+	},
+	"parserOptions": {
+		"sourceType": "module"
+	}
+}
