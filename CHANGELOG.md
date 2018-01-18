@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.0.1 (2018-01-18)
+		
+* Fixed incorrect version in package.json
+
 ## 2.0.0 (2018-01-18)
 
 * Complete rewrite

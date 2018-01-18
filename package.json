@@ -1,7 +1,7 @@
 {
 	"name": "combo-seed",
-	"description": "A starting point for Combo.js web applications.",
-	"version": "3.0.0",
+	"description": "A boilerplate for building Combo apps with ES6 and webpack.",
+	"version": "2.0.1",
 	"author": "Eric Harms",
 	"repository": {
 		"type": "git",
