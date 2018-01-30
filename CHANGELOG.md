@@ -1,7 +1,12 @@
 # Change Log
 
-## Unreleased Changes
+## 2.0.2 (2018-01-30)
 
+* Updated to use Combo 3.0.2
+
+## 2.0.1 (2018-01-19)
+
+* Added Babel Polyfill.
 * Added npm badge.fs.
 
 ## 2.0.1 (2018-01-18)

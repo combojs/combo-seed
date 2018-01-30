@@ -10,7 +10,7 @@ module.exports = {
 
     // entry ------------------------------------------------------------------
 
-    entry: "./app/scripts/app.js",
+    entry: ["babel-polyfill", "./app/scripts/app.js"],
 
     // output -----------------------------------------------------------------
 
