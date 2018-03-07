@@ -1,4 +1,6 @@
-const Layout = new class extends Combo.Component {
+import {Component} from "combo-js";
+
+const Layout = new class extends Component {
 	mounted() {
 		this.data.page.mount(document.getElementById("content"));
 	}
