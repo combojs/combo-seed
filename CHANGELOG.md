@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.0 (2018-03-07)
+
+* Updated project to use Combo from npm.
+* Updated css-loader to use minimize option.
+
 ## 2.0.2 (2018-01-30)
 
 * Updated to use Combo 3.0.2
